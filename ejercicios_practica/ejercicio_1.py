@@ -34,5 +34,16 @@ if __name__ == '__main__':
     # Darle color a la línea a su elección
 
     # Crear acá su gráfico
+    
+
+    fig = plt.figure()
+    ax = fig.add_subplot()
+    ax.plot(x,y, color='red', marker='x', label='onda')
+    ax.set_title('Curva')
+    ax.set_facecolor('y')
+    ax.set_xlabel('Valores X')
+    ax.set_ylabel('Valores Y')
+    ax.legend()
+    plt.show
 
     print("terminamos")
